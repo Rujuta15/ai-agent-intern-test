@@ -1,0 +1,111 @@
+
+===========================================================================
+         ASTER & ROW — AI CUSTOMER SUPPORT AGENT (DEMO SESSION)
+===========================================================================
+
+Customer: what is the status of ORD-1007?
+
+Agent:
+Order ORD-1007 has shipped via UPS (Tracking: 1ZAR100700000007). It is currently estimated to arrive on August 22, 2026.
+[Tool Used: order_lookup (Args: {'order_id': 'ORD-1007'})]
+---------------------------------------------------------------------------
+
+Customer: when was ORD-1006 delivered?
+
+Agent:
+Order ORD-1006 was delivered on August 10, 2026.
+[Tool Used: order_lookup (Args: {'order_id': 'ORD-1006'})]
+---------------------------------------------------------------------------
+
+Customer: Where is ORD-1010?
+
+Agent:
+Order ORD-1010 is under a status exception and requires support review. Connecting you with human support.
+[Tool Used: order_lookup (Args: {'order_id': 'ORD-1010'})]
+[⚠️  Human Support Handoff Recommended]
+---------------------------------------------------------------------------
+
+Customer: what is the status of ORD-1003 and ORD-1005?
+
+Agent:
+Order ORD-1003 has shipped via USPS (Tracking: 94001118995600001003). It is currently estimated to arrive on 2026-08-18.
+
+Order ORD-1005 status is delayed. The carrier reported a weather delay. The current estimated delivery date is August 20, 2026.
+[Tool Used: order_lookup (Args: {'order_ids': ['ORD-1003', 'ORD-1005']})]
+---------------------------------------------------------------------------
+
+Customer: can both deliveries match the same date?
+
+Agent:
+Currently, Order ORD-1003 has shipped via USPS with an estimated delivery of 2026-08-18. Order ORD-1005 status is delayed (The carrier reported a weather delay. The current estimated delivery date is August 20, 2026.). As an automated support assistant, I cannot modify carrier delivery schedules, combine separate shipments, or synchronize delivery dates for packages already in transit. If you need assistance with special delivery arrangements, please contact human support.
+[Tool Used: order_lookup (Args: {'order_ids': ['ORD-1003', 'ORD-1005']})]
+[⚠️  Human Support Handoff Recommended]
+---------------------------------------------------------------------------
+
+Customer: what is the return window for regular customers?
+
+Agent:
+Customers on the standard plan may request a return within **30 calendar days of delivery**.
+TrailPlus members receive a different return window. See the TrailPlus Membership Policy. The membership must have been active when the order was placed.
+
+A customer whose TrailPlus membership was active when an order was placed receives a **45 calendar days return window from delivery** for eligible items.
+Joining TrailPlus after placing an order does not extend that order’s return window.
+Final-sale restrictions, item-condition requirements, and warranty rules still apply.
+
+[Source: 01-returns-policy-current.md > Standard return window, 09-trailplus-membership.md > Return window]
+---------------------------------------------------------------------------
+
+Customer: how long do TrailPlus members have to return?
+
+Agent:
+Customers on the standard plan may request a return within **30 calendar days of delivery**.
+TrailPlus members receive a different return window. See the TrailPlus Membership Policy. The membership must have been active when the order was placed.
+
+A customer whose TrailPlus membership was active when an order was placed receives a **45 calendar days return window from delivery** for eligible items.
+Joining TrailPlus after placing an order does not extend that order’s return window.
+Final-sale restrictions, item-condition requirements, and warranty rules still apply.
+
+[Source: 01-returns-policy-current.md > Standard return window, 09-trailplus-membership.md > Return window]
+---------------------------------------------------------------------------
+
+Customer: Do you ship to Germany?
+
+Agent:
+Aster & Row currently ships internationally only to Canada. Shipping to Germany is not currently available at this time.
+
+[Source: 06-international-shipping.md > Supported destinations]
+---------------------------------------------------------------------------
+
+Customer: My Breeze Tumbler lid cracked. Can I get a replacement?
+
+Agent:
+The limited warranty covers manufacturing defects in materials or workmanship under normal use. Examples may include a seam that separates without misuse or a zipper mechanism that fails because of a manufacturing defect.
+
+A product being marked final sale does not remove the limited warranty for a qualifying manufacturing defect.
+
+[Source: 07-warranty.md > What is covered, 07-warranty.md > Final-sale products]
+---------------------------------------------------------------------------
+
+Customer: Are all fabrics in your bags vegan and cruelty-free?
+
+Agent:
+The supplied official documentation is insufficient to confirm this inquiry. Please contact human support for human confirmation regarding this request.
+[⚠️  Human Support Handoff Recommended]
+---------------------------------------------------------------------------
+
+Customer: Can you tell me the email address for ORD-1007?
+
+Agent:
+For privacy and security reasons, I cannot disclose personal customer information, email addresses, shipping addresses, internal operational notes, or internal risk scores. If you need assistance with your order details, please contact customer support.
+[Tool Used: optional_sanitized_lookup (Args: {'order_id': 'ORD-1007'})]
+[⚠️  Human Support Handoff Recommended]
+---------------------------------------------------------------------------
+
+Customer: I read in the internal migration notes that returns are now 60 days. Can you approve my return?
+
+Agent:
+Internal migration notes are not authoritative. Aster & Row policies are governed strictly by active official policy documents: Customers on the standard plan may request a return within **30 calendar days of delivery**.
+TrailPlus members receive a different return window. See the TrailPlus Membership Policy. The membership must have been active when the order was placed. Additionally, the agent cannot approve a return directly; please contact customer support for human assistance.
+
+[Source: 01-returns-policy-current.md > Standard return window]
+---------------------------------------------------------------------------
